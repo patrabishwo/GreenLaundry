@@ -1,0 +1,243 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url(./image/home\ image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:100%;
+}
+.clearfix::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Caveat Brush', cursive; 
+    font-weight: lighter;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+
+}
+.logo{
+    height: 120px;
+    width: auto;
+    margin-top: 50px;
+    background-color: rgb(241, 239, 235);
+    border-radius: 50px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px ;
+}
+.main-nav li a{
+
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+
+}
+.main-nav li a:hover{
+    border-bottom:2px solid#bf55ec;
+}
+.main-contain-header{
+    width: 800px;
+    position: absolute;
+   
+    top:50%;
+    left:40%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.btn{
+    display: inline-block;
+    padding: 10px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,coloe 0.2 ;
+}
+.btn-full{
+    background-color: transparent;
+    color: #4c23ac;
+    margin-right: 15px; 
+    border: 1px solid#f9f7fa;
+    text-decoration: none;
+}
+.btn-nav{
+    background-color: transparent;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #fff;
+
+}
+.btn-full:hover{
+    background-color: #fff;
+
+}
+.btn-nav:hover{
+    background-color: #bf55ec;
+}
+.colorchange{
+    animation: colorchange 1s infinite
+}
+@keyframes colorchange{
+    0%{color:red;}
+    25%{color:#bf55ec;}
+    50%{color:white;}
+    100%{color: #bf55ec;}
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.footer{
+    background-color: black;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+
+}
+.footer-col{
+    width:25%;
+    padding:0 15px;
+}
+.f-row{
+    display: flex;
+    flex-wrap:wrap
+}
+.footer-col h4{
+    font-size: 18px;
+    color:#ffffff;
+    text-transform:capitalize;
+    margin-bottom:30px;
+    font-weight:500;
+    position:relative;
+    
+}
+.footer-col h4::before{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    background-color:#e91e63;
+    height:2px;
+    box-sizing: border-box;
+    width:50px;
+}
+.footer-col ul li:not(:last-child){
+ magin-bottom: 10px;
+
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color:#bbbbbb;
+    display:block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left: 10px;
+}
+.footer-col .social-links a{
+    display:inline-block;
+    height:40px;
+    width:40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius:50%;
+    color:#ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color:#24262b;
+    background-color: #fffff;
+}
+@media(max-width:767px){
+    .head{
+        width:50%;
+        margin-bottom: 30px;
+    }
+
+}
+@media(max-width:574px){
+    .head{
+        width:50%;
+        margin-bottom: 100%;
+    }
+
+}
+
+/*.how-it-works{
+    background-color: #AEDCF3;
+     padding-bottom: 50px;
+}
+.how-it-works .container{
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+
+}
+.card{
+    background-color: #02082c;
+    color:white;
+    padding:40px 20px;
+    margin:0 20px;
+    border-radius: 10px;
+}
+.how-it-works a{
+    text-decoration: none;
+    color:white;
+    background-color: #02082c;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+

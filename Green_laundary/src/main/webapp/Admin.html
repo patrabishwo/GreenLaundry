@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Green Lundry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .login-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    .login-box input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    .login-box input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .login-box p.error-message {
+      color: red;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .x1{
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: #0e0101;
+        background-color: #f1f1f1;
+        
+        
+    }
+  </style>
+</head>
+<body>
+    <a href="index.html" class="x1">Back To Home Page</a>
+  <div class="container">
+    <div class="login-box">
+      <h2>Admin Login</h2>
+      <form action="admin.jsp" method="post">
+        <input type="text" name="email" placeholder=" Enter Your Email" required>
+        <input type="password" name="password" placeholder="Enter Your Password" required>
+        <input type="submit" value="Login">
+        <p class="error-message"></p>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
